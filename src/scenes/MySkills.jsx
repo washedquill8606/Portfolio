@@ -52,7 +52,7 @@ const MySkills = () => {
       <div className="md:flex md:justify-between mt-16 gap-32">
         {/* Prueba */}
 
-        <motion.div
+        {/* <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
           whileInView="visible"
@@ -69,7 +69,7 @@ const MySkills = () => {
             morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
             odio sit sagittis,
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* EXPERIENCE */}
         <motion.div
