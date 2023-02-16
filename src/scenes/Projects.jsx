@@ -78,7 +78,7 @@ const Projects = () => {
             className="flex justify-center text-center items-center p-10 bg-red
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
-            Projects on different frameworks that I worked on.
+            Projects on different frameworks that I've worked on.
           </div>
           <Project title="Project 1" />
           <Project title="Project 2" />

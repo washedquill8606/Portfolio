@@ -7,7 +7,7 @@ const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section id="skills" className="pt-10 pb-24">
-      <div className="md:flex md:justify-between md:my-8 md:gap-16 mt-16">
+      <div className="md:flex md:justify-between md:my-8 md:gap-16 mt-32">
         <motion.div
             initial="hidden"
             whileInView="visible"
@@ -18,7 +18,7 @@ const MySkills = () => {
               visible: { opacity: 1, x: 0 },
             }}
         >
-          <p className="font-playfair font-semibold text-4xl mb-5">
+          <p className="font-playfair font-semibold text-4xl mb-5 mt-10">
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3"/>
@@ -27,28 +27,33 @@ const MySkills = () => {
           </p>
         </motion.div>
         
-          <div>
-          {isAboveLarge ? (
-            <div
-              >
-              <LinearProgress variant="determinate" value={50} />
-            </div>
-          ) : (
-            <div>
-              <img alt="js_logo"
-              className="mr-2 inline w-[24px]"
-               src="../assets/js_logo.svg"/>
-              <p className="inline font-playfair">JavaScript</p>
-            </div>
-            )}
-          </div>
-
+        
       </div>
 
       {/* SKILL BARS */}
       <div className="mt-5">
+      <motion.div
+          className="md:w-7/8 mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5, /*delay:1*/ }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+
+        <img alt="js_logo"
+          className="mr-2 inline w-[24px]"
+          src="../assets/js_logo.svg"/>
+          <p className="inline font-playfair">Javascript</p>
+
+        <div className="mt-5">
         <LinearProgress className="w-7/8 mb-2" variant="determinate" value={80}/>
         <span>80%</span>
+        </div>
+        </motion.div>
       </div>
       
       
