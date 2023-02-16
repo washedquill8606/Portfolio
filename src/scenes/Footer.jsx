@@ -10,7 +10,7 @@ const Footer = () => {
             ALEJANDRO PUGA
           </p>
           <p className="font-playfair text-md text-yellow">
-            ©2022 PUGA. All Rights Reserved.
+            ©2023 PUGA. All Rights Reserved.
           </p>
         </div>
       </div>
