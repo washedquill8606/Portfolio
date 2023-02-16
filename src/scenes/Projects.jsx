@@ -29,7 +29,7 @@ const Project = ({ title }) => {
           porttitor accumsan tincidunt.
         </p>
       </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <img className="max-h-[400px] max-w-[400px]" src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
     </motion.div>
   );
 };
@@ -78,7 +78,7 @@ const Projects = () => {
             className="flex justify-center text-center items-center p-10 bg-red
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
-            BEAUTIFUL USER INTERFACES
+            Projects on different frameworks that I've worked on.
           </div>
           <Project title="Project 1" />
           <Project title="Project 2" />
@@ -86,11 +86,11 @@ const Projects = () => {
           {/* ROW 2 */}
           <Project title="Project 3" />
           <Project title="Project 4" />
-          <Project title="Project 5" />
+          {/* <Project title="Project 5" /> */}
 
           {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
+          {/* <Project title="Project 6" />
+          <Project title="Project 7" /> */}
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"

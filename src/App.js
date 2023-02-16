@@ -51,7 +51,8 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full ">
+
+      <div className="w-5/6 mx-auto ">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -61,6 +62,8 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
+
+      
       <div className="w-5/6 mx-auto">
         <motion.div
           margin="0 0 -200px 0"
@@ -70,8 +73,10 @@ function App() {
           <Projects />
         </motion.div>
       </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <LineGradient /> 
+
+
+      {/* <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -79,9 +84,11 @@ function App() {
         >
           <Testimonials />
         </motion.div>
-      </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      </div> 
+      <LineGradient /> */}
+
+
+       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -89,7 +96,7 @@ function App() {
         >
           <Contact />
         </motion.div>
-      </div>
+      </div> 
       <Footer />
     </div>
   );
