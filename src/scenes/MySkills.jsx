@@ -1,10 +1,8 @@
 import LineGradient from "../components/LineGradient";
-import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import LinearProgress, { LinearProgressProps } from '@mui/material/LinearProgress';
 
 const MySkills = () => {
-  const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section id="skills" className="pt-10 pb-24">
       <div className="md:flex md:justify-between md:my-8 md:gap-16 mt-32">
@@ -26,8 +24,6 @@ const MySkills = () => {
             These are the languages and frameworks that I've worked with.
           </p>
         </motion.div>
-        
-        
       </div>
 
       {/* SKILL BARS */}
