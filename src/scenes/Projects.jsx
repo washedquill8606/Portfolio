@@ -57,9 +57,10 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+          I've been practicing my programming skills on college and with side projects.
+          I did my social service as part of a team that involved making a web-platform 
+          where the students could make their practices remotely, we design the site on React
+          and made the backend with AWS.
         </p>
       </motion.div>
 
@@ -79,23 +80,23 @@ const Projects = () => {
           >
             These are the projects that I've worked on.
           </div>
-          <Project title="Project 1" description="hello"/>
-          <Project title="Project 2" />
-
+          <Project title="Project 1" description="Simple videogame (POO) made on C#."/>
+          <Project title="Project 2" description="Educational website to do practices remotely,
+                                  using React and AWS."/>
           {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+           {/* <Project title="Project 3" description=""/>
+          <Project title="Project 4" description=""/>
+          <Project title="Project 5" description=""/>  */}
 
           {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
+           {/* <Project title="Project 6" description=""/>
+          <Project title="Project 7" description=""/>
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             SMOOTH USER EXPERIENCE
-          </div>
+          </div>  */}
         </motion.div>
       </div>
     </section>
