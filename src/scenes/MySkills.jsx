@@ -77,6 +77,31 @@ const MySkills = () => {
         </div>
         </motion.div>
       </div>
+
+      <div className="mt-5">
+      <motion.div
+          className="md:w-7/8 mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5, /*delay:1*/ }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+
+        <img alt="fastapi_logo"
+          className="mr-2 inline w-[24px]"
+          src="../assets/fastapi_logo.svg"/>
+          <p className="inline font-playfair">FastAPI</p>
+
+        <div className="mt-5">
+        <LinearProgress className="w-7/8 mb-2" variant="determinate" value={40}/>
+        <span>40%</span>
+        </div>
+        </motion.div>
+      </div>
       
       <div className="mt-5">
       <motion.div
