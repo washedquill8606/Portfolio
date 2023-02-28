@@ -84,6 +84,7 @@ const Projects = () => {
           <Project title="Project 2" description="Educational website to do practices remotely,
                                   using React and AWS."/>
           <Project title="Project 3" description="Videogames web news aggregator made with Django"/>
+          <Project title="Project 4" description="Weather app made with a external API using Django"/>
         </motion.div>
       </div>
     </section>
