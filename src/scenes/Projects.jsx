@@ -83,6 +83,7 @@ const Projects = () => {
           <Project title="Project 1" description="Simple videogame (POO) made on C#."/>
           <Project title="Project 2" description="Educational website to do practices remotely,
                                   using React and AWS."/>
+          <Project title="Project 3" description="Videogames web news aggregator made with Django"/>
         </motion.div>
       </div>
     </section>
