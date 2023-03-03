@@ -72,8 +72,8 @@ const MySkills = () => {
           <p className="inline font-playfair">Python</p>
 
         <div className="mt-5">
-        <LinearProgress className="w-7/8 mb-2" variant="determinate" value={70}/>
-        <span>70%</span>
+        <LinearProgress className="w-7/8 mb-2" variant="determinate" value={90}/>
+        <span>90%</span>
         </div>
         </motion.div>
       </div>
