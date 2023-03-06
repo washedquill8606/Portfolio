@@ -63,17 +63,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* MOBILE MENU POPUP */}
         {!isDesktop && isMenuToggled && (
-          <motion.div
-          className="md:w-7/8 mt-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.2, /*delay:1*/ }}
-          variants={{
-            hidden: { opacity: 0, x: 50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-        >
           <div className="fixed right-0 bottom-0 h-full bg-red w-[300px]">
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
@@ -106,7 +95,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               />
             </div>
           </div>
-          </motion.div>
         )}
       </div>
     </nav>
