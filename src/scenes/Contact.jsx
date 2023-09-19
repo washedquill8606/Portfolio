@@ -63,7 +63,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-white font-semibold placeholder-pink-900 placeholder-opacity-70 p-3"
+              className="w-full bg-white font-semibold placeholder-pink-900 placeholder-opacity-70 p-3 text-black"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -72,14 +72,14 @@ const Contact = () => {
               })}
             />
             {errors.name && (
-              <p className="text-red mt-1">
+              <p className="text-white mt-1">
                 {errors.name.type === "required" && "This field is required."}
                 {errors.name.type === "maxLength" && "Max length is 100 char."}
               </p>
             )}
 
             <input
-              className="w-full bg-white font-semibold placeholder-pink-900 placeholder-opacity-70 p-3 mt-5"
+              className="w-full bg-white text-black font-semibold placeholder-pink-900 placeholder-opacity-70 p-3 mt-5"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -88,14 +88,14 @@ const Contact = () => {
               })}
             />
             {errors.email && (
-              <p className="text-red mt-1">
+              <p className="text-white mt-1">
                 {errors.email.type === "required" && "This field is required."}
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
             )}
 
             <textarea
-              className="w-full bg-white font-semibold placeholder-pink-900 placeholder-opacity-70 p-3 mt-5"
+              className="w-full bg-white text-black font-semibold placeholder-pink-900 placeholder-opacity-70 p-3 mt-5"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -106,7 +106,7 @@ const Contact = () => {
               })}
             />
             {errors.message && (
-              <p className="text-red mt-1">
+              <p className="text-white mt-1">
                 {errors.message.type === "required" &&
                   "This field is required."}
                 {errors.message.type === "maxLength" &&
